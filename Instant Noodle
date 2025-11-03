@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int x, y, r;
+
+    scanf("%d %d", &x, &y);  // input two integers
+    r = x * y;               // multiply them
+    printf("%d", r);         // print result
+
+    return 0;
+}
