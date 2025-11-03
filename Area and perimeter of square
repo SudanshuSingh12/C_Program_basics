@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int n;  // side of the square
+
+    scanf("%d", &n);  // input side length
+
+    int area = n * n;    // area of square
+    int p = 4 * n;       // perimeter of square
+
+    printf("%d %d", area, p);  // print area and perimeter
+
+    return 0;
+}
