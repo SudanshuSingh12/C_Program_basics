@@ -1,0 +1,42 @@
+// Inches to Centimeters
+// Program Description
+// You'll be given a person's height in inches. Write a program to convert it into centimeters.
+// Input Format
+// A single line of input cotains an integer denoting height in inches.
+
+// Output Format
+// Print height in centimeters adjusted to 2 decimal places after point.
+
+// Constraints
+// 1<=height<=100
+
+// Input-1
+// 66
+
+
+// Output-1
+// 167.64
+
+
+// Input-2
+// 77
+
+
+// Output-2
+// 195.58
+
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    float r;
+
+    scanf("%d", &n);
+
+    r = 2.54 * n;
+
+    printf("%.2f", r);
+
+    return 0;
+}
