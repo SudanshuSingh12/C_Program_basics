@@ -1,0 +1,44 @@
+Heron's Formula
+/*Program Description
+Find the area of Triangle using Heron's formula.
+Hint:Heron's Formula= sqrt(s*(s-a)*(s-b)*(s-c).where a,b,c are sides.
+Input Format
+Only line input contains three integers a,b,c.
+Output Format
+Print area of triangle. The result should be decimal value with 4 decimal places.
+
+Constraints
+1<=a,b,c<=50
+Explaination
+Input-1
+5 8 6
+Output-1
+14.9812
+Input-2
+2 3 5
+Output-2
+0.0000   */
+
+//CODE for the above problem
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a, b, c;
+    double s, r;
+
+    // Input three sides of the triangle
+    scanf("%d %d %d", &a, &b, &c);
+
+    // Calculate semi-perimeter
+    s = (a + b + c) / 2.0;
+
+    // Calculate area using Heron's formula
+    r = sqrt(s * (s - a) * (s - b) * (s - c));
+
+    // Print area
+    printf("%.4f", r);
+
+    return 0;
+}
